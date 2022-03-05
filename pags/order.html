@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Vaniglia</title>
+        <link rel="stylesheet" href="../assets/css/main.css">
+    </head>
+    <body>   
+        <div class="container"> 
+            <div class="content">
+                <header class="title">
+                    <h1>Vaniglia</h1>
+                </header>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./login.html">Log in</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn">Admin</a>
+                        <div class="dropdown-content">
+                            <a href="./pedidos.html">Pedidos</a>
+                            <a href="./inventario.html">Inventario</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn">Catálogo</a>
+                        <div class="dropdown-content">
+                            <a href="./chocolates.html">Chocolates</a>
+                            <a href="./pasteles.html">Pasteles</a>
+                            <a href="./flanes.html">Flanes</a>
+                            <a href="./decoracion.html">Decoración</a>
+                        </div>
+                    </li>
+                    <li><a href="./acercade.html">Acerca de</a></li>
+                </ul>
+                <h2>Diseñe el pastel a su gusto</h2>
+                <form action="pedido.js">
+                    <div class="info-usuario">
+                        <label for="Nombre">Nombre</label><br>
+                        <input class="input1" type="text" id="Nombre" placeholder="Nombre"><br>
+                        <label for="Direccion">Dirección</label><br>
+                        <input class="input1" type="text" id="Direccion" placeholder="Direccion"><br>
+                        <label for="tel">Tel.</label><br>
+                        <input class="input1" type="tel" name="tel" id="tel" placeholder="Tel."><br>
+                        <label for="mail">Correo</label><br>
+                        <input class="input1" type="email" name="mail" id="mail" placeholder="name@correo.com">
+                    </div>
+                    
+                    <div class="info-orden">
+                        <label for="pastel">¿Qué pastel buscas?</label><br>
+                        <select class="input1" name="pastel" id="pastel">
+                            <option value="P_chocolate">Pastel de Chocolate</option>
+                            <option value="P_fruta">Pastel de Fruta </option>
+                            <option value="P_corazon">Pastel de Corazón</option>
+                            <option value="P_graduacion">Pastel de Graduación</option>
+                            <option value="P_fresa">Pastel de Fresa</option>
+                            <option value="P_sorpresa">Pastel sorpresa</option>
+                            <option value="ninguno">None</option>
+                        </select><br>
+
+                        <label for="flanes">Escoge tu flan favorito</label><br>
+                        <select class="input1" name="flanes" id="flanes">
+                            <option value="F_arandano">Flan de Arándano</option>
+                            <option value="F_cajeta">Flan de Cajeta</option>
+                            <option value="F_clasico">Flan Clásico</option>
+                            <option value="F_patissier">Flan Pâtissier</option>
+                            <option value="F_limon">Flan de Limón </option>
+                            <option value="F_napolitano">Flan Napolitano </option>
+                            <option value="ninguno">None</option>
+                        </select><br>
+
+                        <label for="chocolateria">¿No quieres un chocolate?</label><br>
+                        <select class="input1" name="chocolateria" id="chocolateria">
+                            <option value="C_donas">Donas (docena)</option>
+                            <option value="C_lasaña">Lasaña dulce</option>
+                            <option value="C_triple">Triple Chocolate</option>
+                            <option value="C_trufas">Trufas (docena)</option>
+                            <option value="C_turron">Turrón (docena)</option>
+                            <option value="C_volcan">Volcán de Mantequilla</option>
+                            <option value="ninguno">None</option>
+                        </select><br>
+
+                        <label for="Topings">Añade el toping de tu preferencia sin costo
+                            <br>(Aplican restricciones)
+                        </label><br>
+                        <select class="input1" name="Topings" id="Topings">
+                            <option value="T_chispas">Chispas de Chocolate</option>
+                            <option value="T_fruta">Fruta Fresca</option>
+                            <option value="T_lunetas">Lunetas</option>
+                            <option value="T_merengue">Merengue</option>
+                            <option value="T_flores">Flores</option>
+                            <option value="T_chocolate">Chocolate Derretido</option>
+                            <option value="ninguno">None</option>
+                        </select><br>
+                        <label for="inst">¿Algo más? ¡Dejanos Saber!</label><br>
+                        <input class="input1" type="text" name="inst" id="inst" placeholder="Escribe aquí">
+                    </div>
+                    <input class="btn-summit" type="submit" value="ordenar">
+                    <input class="btn-reset" type="reset" value="reset">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

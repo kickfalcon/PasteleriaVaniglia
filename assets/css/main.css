@@ -1,0 +1,213 @@
+/*Paleta de colores generada en Coolors.co
+Blanco: #F4F8F3
+Cafe: #AE6449
+Marron: #A44F30
+Beige: #E0C395 
+*/
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+.table td, .table th{
+    padding:1em;
+    text-align: left;
+}
+.table tr:nth-child(odd){background-color: #E0C395}
+a{
+    text-decoration: none;/*quita el subrayado de los links*/
+    color: #A44F30;
+}
+.container{
+    background-color:#E0C395;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content:center;
+}
+body{
+    padding: 0;
+    margin: 0;
+}/*Elimina el margen que por defecto pone el navegador*/
+.content{
+    padding: 1em;
+    background-color: #F4F8F3;
+    box-shadow:10px 10px 8px #AE6449, 15px 15px 8px #A44F30;
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 80vh;
+    position:relative;
+    overflow: scroll;
+    border-radius: 4px;
+}
+.content h2{
+    color: #A44F30;
+    font-weight: 400;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: #A44F30;
+}
+address{
+    margin-top: 10%;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: #A44F30;
+}
+.info-usuario{
+    position:absolute;
+    left: 10%;
+    padding: 1em;
+    background-color: #AE6449;
+    color: #F4F8F3 ;
+    width: 40%;
+    height: 210px;
+    border-radius: 4px;
+
+}
+.info-orden{
+    position:relative;
+    float:right;
+    right: 10%;
+    padding: 1em;
+    background-color: #AE6449;
+    color: #F4F8F3 ;
+    width: 40%;
+    border-radius: 4px;
+}
+.info-pedido{
+    position:absolute;
+    padding: 0;
+    left: 40%;
+    width: 55%;
+}
+.info-pedido strong{
+    font-family: 'Courier New', Courier, monospace;
+    color: #A44F30;
+}
+.btn-summit{
+    left: 45%;
+    margin-top: 25%;
+    position: relative;
+    border-radius: 4px;
+}
+.btn-reset{
+    left: 45%;
+    margin-top: 25%;
+    position: relative;
+    border-radius: 4px;
+}
+.logo{
+    float:left;
+    width: 40%;
+}
+.imagen{
+    float: left;
+    width: 20%;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+.user{
+    margin-left: 30%;
+    margin-top: 10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.input1{
+
+    background-color: #E0C395;
+    border-radius: 4px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:  #A44F30 ;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #AE6449;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: #F4F8F3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} 
+.dropdown-content a:hover {background-color: #A44F30;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
+.galeria{
+    height: 55%;
+    width: 100%;
+    margin: 1em auto;
+    position: relative;
+    /*border: 1px solid;*/
+}
+.galeria img{
+    width: 350px;
+    position: absolute;
+    top: 0%;
+    left:40%;
+    opacity:0;
+    transition:opacity 3s;
+}
+.galeria [type=radio]{
+    position: relative;
+    bottom:60%;
+    left:40%;
+}
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1){
+    opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2){
+    opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3){
+    opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4){
+    opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5){
+    opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(6):checked ~ img:nth-of-type(6){
+    opacity: 1;
+}
